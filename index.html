@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>タイムゾーン確認</title>
+  <script>
+    function getTimezone() {
+      const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      document.getElementById('timezone').innerText = timeZone;
+    }
+  </script>
+</head>
+<body onload="getTimezone()">
+  <h1>あなたのブラウザのタイムゾーン:</h1>
+  <h2 id="timezone"></h2>
+</body>
+</html>
